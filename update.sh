@@ -52,8 +52,4 @@ popd
 rm -f /tmp/ppt-vew.exe
 rm -f /tmp/ppviewer*.cab
 
-export OSFONTDIR="/usr/local/share/fonts;/usr/share/fonts;$HOME/.fonts"
-
-mtxrun --script fonts --reload
-
-mkluatexfontdb --force --verbose=-1 -vvv
+./update-db.sh
